@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="582.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.persoanedarnice.controller.AjutController">
+   <children>
+      <TableView fx:id="tableView_Nevoi" layoutX="50.0" layoutY="86.0" onMouseClicked="#handleSelectedItem" prefHeight="200.0" prefWidth="463.0">
+        <columns>
+          <TableColumn fx:id="tableColumn_Titlu" prefWidth="75.0" text="titlu" />
+          <TableColumn fx:id="tableColumn_Descriere" prefWidth="75.0" text="descriere" />
+            <TableColumn fx:id="tableColumn_Deadline" prefWidth="75.0" text="deadline" />
+            <TableColumn fx:id="tableColumn_OmInNevoie" prefWidth="75.0" text="omInNevoie" />
+            <TableColumn fx:id="tableColumn_OmSalvator" prefWidth="84.0" text="omSalvator" />
+            <TableColumn fx:id="tableColumn_Status" prefWidth="75.0" text="status" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableView_FapteBune" layoutX="62.0" layoutY="329.0" prefHeight="200.0" prefWidth="450.0">
+        <columns>
+          <TableColumn fx:id="tableColumn_TitluBun" prefWidth="75.0" text="titlu" />
+          <TableColumn fx:id="tableColumn_DescriereBun" prefWidth="75.0" text="descriere" />
+            <TableColumn fx:id="tableColumn_DeadlineBun" prefWidth="75.0" text="deadline" />
+            <TableColumn fx:id="tableColumn_OmInNevoieBun" prefWidth="75.0" text="omInNevoie" />
+            <TableColumn fx:id="tableColumn_OmSalvatorBun" prefWidth="75.0" text="omSalvator" />
+            <TableColumn fx:id="tableColumn_StatusBun" prefWidth="75.0" text="status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
